@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata - Hafizh</title>
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#F4F6F5;
+    color:#26312E;
+  }
+  header{
+    background:#3D5A50;
+    padding:36px 20px 60px;
+    text-align:center;
+    color:#fff;
+  }
+  header h1{
+    margin:0 0 4px;
+    font-size:26px;
+  }
+  header p{
+    margin:0;
+    color:#CFE0D9;
+    font-size:14px;
+  }
+  nav{
+    display:flex;
+    justify-content:center;
+    gap:0;
+    margin-top:26px;
+  }
+  nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    padding:8px 18px;
+    border-right:1px solid rgba(255,255,255,0.25);
+  }
+  nav a:last-child{ border-right:none; }
+  nav a:hover{ color:#CFE0D9; }
+
+  .container{
+    max-width:700px;
+    margin:-36px auto 60px;
+    padding:0 20px;
+  }
+  .card{
+    background:#fff;
+    border-radius:10px;
+    padding:28px 32px;
+    margin-bottom:22px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.06);
+  }
+  .card h2{
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#3D5A50;
+    margin:0 0 16px;
+    border-bottom:2px solid #E4EAE7;
+    padding-bottom:8px;
+  }
+
+  .profile-card{ text-align:center; }
+  .profile-name{
+    font-size:19px;
+    font-weight:700;
+    margin:0 0 2px;
+    color:#26312E;
+  }
+  .profile-role{
+    font-size:13px;
+    color:#7A8A83;
+    margin:0 0 16px;
+  }
+  .about-text{
+    text-align:left;
+    line-height:1.7;
+    font-size:14px;
+    color:#3E4B47;
+  }
+  .photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    margin:16px auto 0;
+    object-fit:cover;
+    border:3px solid #3D5A50;
+    display:block;
+  }
+
+  .info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px 24px;
+  }
+  .info-item{
+    border-bottom:1px solid #EEF1EF;
+    padding-bottom:8px;
+  }
+  .info-item .k{
+    display:block;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:#8A9A93;
+    margin-bottom:3px;
+  }
+  .info-item .v{
+    font-size:14px;
+    color:#26312E;
+  }
+
+  .timeline{
+    list-style:none;
+    margin:0; padding:0;
+  }
+  .timeline li{
+    position:relative;
+    padding:0 0 16px 22px;
+    border-left:2px solid #E4EAE7;
+    font-size:14px;
+  }
+  .timeline li::before{
+    content:"";
+    position:absolute;
+    left:-6px; top:2px;
+    width:10px; height:10px;
+    border-radius:50%;
+    background:#3D5A50;
+  }
+  .timeline li:last-child{ border-left:2px solid transparent; padding-bottom:0; }
+
+  .ph{ color:#A7ADA9; font-style:italic; }
+
+  .footer-note{
+    text-align:center;
+    color:#9AA5A0;
+    font-size:12px;
+    margin-top:10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Biodata Diri</h1>
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#informasi">Informasi Pribadi</a>
+    <a href="#pendidikan">Riwayat Pendidikan</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="card profile-card" id="profil">
+    <p class="profile-name">Muhammad Hafizh Maulana</p>
+    <p class="profile-role">Mahasiswa Ilmu Komputer &mdash; Universitas Negeri Medan</p>
+
+    <h2 style="text-align:left; border:none; margin-bottom:8px;">Tentang Saya</h2>
+    <p class="about-text">Perkenalkan, saya Muhammad Hafizh Maulana, mahasiswa jurusan Ilmu Komputer di Universitas Negeri Medan. Saya tertarik mempelajari cara kerja komputer dari level perangkat keras hingga perangkat lunak. Dan saya juga tertarik pada bidang teknologi dan AI. Saya berharap dapat mengembangkan minat saya menjadi suatu bakat yang dapat berguna untuk masa yang akan datang.</p>
+
+    <img class="photo" src="foto.jpg" alt="Foto Hafizh">
+  </div>
+
+  <div class="card" id="informasi">
+    <h2>Informasi Pribadi</h2>
+    <div class="info-grid">
+      <div class="info-item"><span class="k">Nama</span><span class="v ph">Muhammad Hafizh Maulana</span></div>
+      <div class="info-item"><span class="k">NIM</span><span class="v ph">4253550005</span></div>
+      <div class="info-item"><span class="k">Kelas</span><span class="v ph">PSIK 25D</span></div>
+      <div class="info-item"><span class="k">Program Studi</span><span class="v ph">Ilmu Komputer</span></div>
+      <div class="info-item"><span class="k">Usia</span><span class="v ph">18</span></div>
+      <div class="info-item"><span class="k">Hobi</span><span class="v ph">Olah Raga dan Main Game </span></div>
+      <div class="info-item"><span class="k">Tempat, Tanggal Lahir</span><span class="v ph">Binjai, 30 Agustus 2007</span></div>
+      <div class="info-item"><span class="k">Alamat</span><span class="v ph">Stabat, Kab. langkat</span></div>
+      <div class="info-item"><span class="k">Nomor HP</span><span class="v ph">081361021011</span></div>
+      <div class="info-item"><span class="k">Email</span><span class="v ph">muhamadhafizhmaulana834@gmail.com</span></div>
+    </div>
+  </div>
+
+  <div class="card" id="pendidikan">
+    <h2>Riwayat Pendidikan</h2>
+    <ul class="timeline">
+      <li>SDN 050659</li>
+      <li>MTSN 3 Langkat</li>
+      <li>MAN 2 Langkat</li>
+      <li>Universitas Negeri Medan &ndash; Ilmu Komputer (2025 - sekarang)</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
